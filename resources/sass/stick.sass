@@ -1,0 +1,168 @@
+// #open_sidebar
+//     cursor: pointer
+
+// .sidebar
+//     height: 100vh
+//     width: 100%
+//     position: absolute
+//     left: 100vw
+//     z-index: 1
+//     transition: left .2s
+
+.stick-template
+    display: none
+
+.stick-env
+    position: absolute
+    cursor: pointer
+    left: 0
+    top: 0
+    z-index: 1030
+    max-width: 220px
+    @media (max-width: 520px)
+        max-width: 100px
+    &:hover .stick__edit
+        display: block
+    &:hover .stick__del
+        display: block
+
+.stick
+    position: absolute
+    padding: 8px 16px   
+    border-radius: 8px
+    position: relative
+    display: inline-block
+    min-width: 150px
+    min-height: 50px
+    z-index: 10
+    @media (max-width: 520px)
+        min-width: 100px
+        min-height: 35px
+    p
+        margin: 0
+    &__title
+        font-size: 12px
+        text-align: center
+        color: #fff
+        @media (max-width: 520px)
+            font-size: 8px
+
+    &__big-title
+        font-size: 20px
+        text-align: center
+        color: #fff
+        @media (max-width: 520px)
+            font-size: 12px
+    &__is-label
+        margin-left: 8px
+    &__brand
+        font-size: 20px
+        text-align: center
+        color: #fff
+        @media (max-width: 520px)
+            font-size: 12px
+    &__del
+        color: #ffffff
+        position: absolute
+        right: 0
+        top: 0
+        background-color: #000
+        z-index: 10
+        border: 0
+        outline: none
+        cursor: pointer
+        display: none
+        padding: 1px 6px
+    &__edit
+        color: #ffffff
+        position: absolute
+        right: 23px
+        top: 0
+        background-color: #000
+        z-index: 10
+        border: 0
+        outline: none
+        cursor: pointer
+        display: none
+        padding: 1px 6px
+    &__title-input
+        display: block
+        margin-top: 15px
+    &__color-input
+        display: block
+        margin-top: 15px
+    &__select-input
+        width: 100%
+        display: block
+    &__select-label
+        display: block
+        margin-top: 15px
+        color: #fff
+    &__brands-table
+        color: #fff
+        th
+            border: 1px solid #fff
+        td
+            border: 1px solid #fff
+        input
+            outline: none
+            border: none
+            background: transparent
+            color: #fff
+        button
+            background: transparent
+            color: #fff
+            border: 0
+            cursor: pointer
+
+    &__brands-button-add
+        display: block
+        outline: none
+        background: transparent
+        border-radius: 10px
+        padding: 3px 10px
+        border: 1px solid #fff
+        color: #ffffff
+        margin-top: 5px
+        margin-bottom: 5px
+        cursor: pointer
+    &__radio-group
+        display: flex
+        align-items: center
+        label
+            margin-left: 8px
+    span
+        color: #fff
+    label
+        color: #fff
+
+.handler
+    width: 50px
+    height: 20px
+    position: relative
+    transform: rotate(-50deg) translate(50px, 50px)
+    overflow: hidden
+    @media (max-width: 520px)
+        transform: rotate(-50deg) translate(42px, 30px)
+    &__color
+        display: block
+        width: 50px
+        height: 20px
+        position: absolute
+        position: absolute;
+        transform: rotate(-25deg) translate(4px, 11px);
+.handler_up
+    width: 50px
+    height: 20px
+    position: relative
+    transform: rotate(85deg) translate(0px,-104px)
+    overflow: hidden
+    &__color
+        display: block
+        width: 50px
+        height: 20px
+        position: absolute
+        position: absolute;
+        transform: rotate(-25deg) translate(4px, 11px);
+
+

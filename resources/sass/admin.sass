@@ -1,0 +1,154 @@
+@import "fonts"
+@import "colors"
+@import "photos"
+
+body
+	font-family: FuturaBookC
+
+h1
+	margin-top: 15px
+
+h3
+	margin-top: 20px
+
+fieldset
+	width: 100%
+	border: 0
+
+.form-horizontal
+	width: 100%
+	padding-top: 10px
+	padding-left: 15px
+	padding-right: 15px
+
+.form-horizontal input
+	outline: none
+
+.form-horizontal label
+	font-weight: bold;
+
+
+fieldset.form-group
+	span.is-invalid
+		display: none
+
+fieldset.is-invalid
+	input
+		border: 1px solid red
+		color: red
+	select
+		border: 1px solid red
+		color: red
+	label
+		color: red
+	span.is-invalid
+		display: inline-block
+		font-size: 12px
+		color: red
+
+.salons
+	&__table
+		margin-top: 10px
+		th
+			padding: 6px 15px
+			border: 1px solid #000
+		td
+			padding: 6px 15px
+			border: 1px solid #000
+			cursor: pointer
+
+.char__table
+		margin-top: 10px
+		th
+			padding: 6px 15px
+			border: 1px solid #000
+		td
+			padding: 0
+			border: 1px solid #000
+
+.coords	input
+	width: 150px
+
+.coords	fieldset
+	width: inherit
+
+.admin__save-buttons
+	margin-top: 15px
+
+#adm_yamap
+    margin-top: 20px
+    background-color: #fff
+    height: 400px
+
+.photos-block
+	width: calc(50% - 10px)
+
+.features-block
+	width: calc(50% - 10px)
+
+.salon-map
+	margin-top: 20px
+	width: 100%
+	min-height: 50px
+	background-color: #c5d8ef
+.map-buttons
+	display: flex
+	padding: 6px
+	button
+		margin-right: 10px
+
+.map-image
+	position: relative
+	overflow: hidden
+	img
+		display: block
+.map-sizes
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 10px
+	margin-bottom: 15px
+	label
+		margin-right: 5px
+	input
+		margin-right: 15px
+		width: 60px
+		text-align: center
+.map-sizes-template
+	display: none
+
+.video-template
+	display: none
+
+.video-container
+	display: flex
+	flex-wrap: wrap
+	margin-top: 10px
+.video-block
+	width: 580px
+	margin-right: 8px
+	input
+		width: calc(100% - 40px)
+		padding: 8px
+		border-radius: 6px
+		outline: none
+		margin-bottom: 5px
+		font-family: FuturaBookC
+		font-size: 16px
+	span
+		border-radius: 6px
+		border: 2px solid black
+		width: 38px
+		margin-left: 2px
+		padding: 8px 10px
+		cursor: pointer
+
+.admin__menu
+	margin-top: 15px
+	a
+		margin-right: 15px
+		font-family: FuturaBookC
+		font-size: 16px
+		color: #000
+
+

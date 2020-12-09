@@ -1,0 +1,500 @@
+@import "fonts"
+@import "colors"
+*
+    margin: 0
+    padding: 0
+
+body
+    background: linear-gradient(to right,$body-gradient-from,$body-gradient-to)
+
+header
+    display: flex
+    align-items: center
+    margin-top: 15px
+    p
+        margin-left: 30px
+        font-family: FuturaBookC
+        font-size: 10pt
+
+main
+    margin-top: 110px
+    display: flex
+    flex-wrap: nowrap
+    @media (max-width: 992px)
+        flex-wrap: wrap
+
+
+.slider-left
+    width: 570px
+    @media (max-width: 768px)
+        width: 100%
+.item-big
+    width: 570px
+    @media (max-width: 768px)
+        width: 100%
+.item-small
+    width: 170px
+
+.slider-left img
+    height: 450px
+    width: 570px
+    border-radius: 15px
+    @media (max-width: 768px)
+        width: 100%
+        height: inherit
+
+.small-slides
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    img
+        width: 170px
+        height: 120px
+        border-radius: 15px
+    div.item
+        width: 170px
+        height: 120px
+    @media (max-width: 768px)
+        img
+            width: 140px
+            height: 100px
+            border-radius: 10px
+        div.item
+            width: 140px
+            height: 100px
+    @media (max-width: 576px)
+        img
+            width: 100px
+            height: 71px
+            border-radius: 10px
+        div.item
+            width: 100px
+            height: 71px
+    @media (max-width: 360px)
+        img
+            width: 80px
+            height: 57px
+            border-radius: 10px
+        div.item
+            width: 80px
+            height: 57px
+
+.text-right
+    margin-left: 30px
+
+p.right-title
+    font-family: Roboto-Bold
+    font-size: 50pt
+    text-transform: uppercase
+    margin-bottom: 30px
+    @media (max-width: 576px)
+        font-size: 40pt
+
+p.right-text
+    font-family: Roboto
+    font-size: 16pt
+
+.phone-time-block
+    margin-top: 50px
+    &__phone
+        display: flex
+        align-items: center
+        span
+            margin-left: 12px
+            font-family: FuturaDemiC
+        a
+            margin-left: 12px
+            font-family: FuturaDemiC
+            color: #000
+            text-decoration: none
+            &:visited
+                color: #000
+    &__footer-phone
+        display: flex
+        align-items: center
+        span
+            margin-left: 14px
+            font-family: FuturaDemiC
+        @media (max-width: 670px)
+            display: none
+
+    &__time
+        margin-top: 15px
+        display: flex
+        align-items: center
+        span
+            margin-left: 12px
+            font-family: FuturaDemiC
+
+    &__footer-time
+        display: flex
+        align-items: center
+        span
+            margin-left: 16px
+            font-family: FuturaDemiC
+        @media (max-width: 500px)
+            display: none
+
+.button-block
+    margin-top: 60px
+
+.border-white
+    border: 3px solid #fff
+    border-radius: 33px
+    width: fit-content
+.border-grey
+    border: 3px solid $grey-button-border
+    border-radius: 36px
+    display: inline-block
+
+.main-buttons
+    border-radius: 30px
+    border: 0
+    padding-top: 11px
+    padding-bottom: 11px
+    font-family: FuturaDemiC
+    font-size: 18px
+    width: 225px
+    outline: none
+    cursor: pointer
+
+a.main-buttons
+    display: block
+    width: 225px
+    text-align: center
+    text-decoration: none
+    &:visited
+        color: #000
+
+
+.yataxi-block
+    margin-top: 11px
+
+#yataxi
+    background-color: $yellow-button
+
+#build_route
+    color: #ffffff
+    text-transform: uppercase
+    background: linear-gradient(to right, $button-gradient-from, $button-gradient-to)
+
+.video-content
+    margin-top: 120px
+    display: flex
+    margin-left: -15px
+    flex-wrap: wrap
+    @media (max-width: 1330px)
+        margin-left: 0px
+    @media (max-width: 768px)
+        width: 100%
+        height: inherit
+    .video
+        margin-bottom: 45px
+        position: relative
+        border-radius: 12px
+        margin: 15px
+        height: 350px
+        background-color: #fff
+        box-shadow: 5px 5px 13px #d4e0fa
+        @media (max-width: 768px)
+            width: 100%
+            height: inherit
+            margin-left: 0
+            margin-right: 0
+
+        img
+            width: 570px
+            height: 300px
+            border-top-left-radius: 12px
+            border-top-right-radius: 12px
+            z-index: 0
+            @media (max-width: 768px)
+                width: 100%
+                height: inherit
+        &__bottom-buttons
+            display: flex
+            height: 50px
+            align-items: center
+            cursor: pointer
+            img
+                height: 46px
+                width: 46px
+                margin-left: 22px
+                margin-right: 22px
+            &-strips
+                width: 450px
+                height: 6px
+                border-radius: 3px
+                position: relative
+                box-shadow: 0 0 13px #aaddf7
+                @media (max-width: 768px)
+                    width: calc(100% - 110px)
+
+            &-blue-strip
+                height: 6px
+                position: absolute
+                width: 250px
+                height: 6px
+                top: 0
+                left: 0
+                border-radius: 3px
+                background-color: #4192ec
+                @media (max-width: 768px)
+                    width: calc(100% - 100px)
+        .blue-fon 
+            position: absolute
+            width: 570px
+            height: 300px
+            top: 0
+            left: 0
+            border-top-left-radius: 12px
+            border-top-right-radius: 12px
+            z-index: 50
+            background-color: #005a9b
+            opacity: 0.29
+            transition: .5s
+            &:hover
+                opacity: 0
+            @media (max-width: 768px)
+                width: 100%
+                height: calc(100% - 55px)
+
+        .play-button
+            cursor: pointer
+        .ellipse
+            position: absolute
+            height: 84px
+            width: 84px
+            top: calc(50% - 42px)
+            left: calc(50% - 42px)
+            z-index: 100
+            img
+                width: 100%
+                height: 100%
+        .triangle
+            position: absolute
+            height: 53px
+            width: 53px
+            top: calc(50% - 26px)
+            left: calc(50% - 26px)
+            z-index: 100
+            img
+                width: 100%
+                height: 100%
+
+.single-page
+    height: 100vh
+    position: relative
+    overflow: hidden
+
+.wide-container
+    margin-left: 50px
+    margin-right: 50px
+    @media (max-width: 400px)
+        margin-left: 15px
+        margin-right: 15px
+
+
+#yamap
+    background-color: #fff
+    height: calc(100% - 90px)
+    @media (max-width: 768px)
+        height: calc(100% - 130px)
+
+footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 15px
+    p
+        margin-left: 30px
+        font-family: FuturaBookC
+        font-sixe: 10pt
+
+.footer-phone-label
+    height: 8px
+    width: 8px
+    border-radius: 50%
+    background-color: #001f4a
+
+.footer-call-button
+    display: block
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    position: relative
+    border: 0
+    background: linear-gradient(to right, $button-gradient-from, $button-gradient-to)
+    cursor: pointer
+    img
+        top: calc(50% - 10px)
+        left: calc(50% - 10px)
+        position: absolute
+        height: 20px
+        width: 20px
+
+.footer-border-white
+    border: 3px solid #fff
+    border-radius: 43px
+    width: fit-content
+.footer-border-grey
+    border: 4px solid $grey-button-border
+    border-radius: 47px
+    width: fit-content
+
+.footer-logo-div
+    display: flex
+    align-items: center
+    @media (max-width: 992px)
+        p
+            display: none
+
+
+.baloon-container
+    width: 220px
+    display: none
+
+.navigator-container
+    width: 135px
+    display: none
+
+.navigator
+    &-text    
+        width: 135px
+        background-color: #fff
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 14px
+        opacity: 1
+        border-radius: 20px
+    &-features
+        margin-top: -9px
+        padding-bottom: 9px
+
+.baloon
+    &-text    
+        width: 220px
+        background-color: #fff
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 14px
+        opacity: 1
+        border-radius: 20px
+ 
+    &-footer
+        display: block;
+        width: 230px
+        background-color: #4192ec
+        text-decoration: none
+        color: #fff
+        text-align: center
+        font-family: FuturaDemiC
+        font-size: 12pt
+        margin-left: 15px
+        margin-right: 15px
+        padding-top: 4px
+        padding-bottom: 4px
+        border-bottom-left-radius: 160px
+        border-bottom-right-radius: 160px
+        border: 0
+        outline: none
+        cursor: pointer
+
+
+.baloon-features
+    font-size: 14px
+    font-family: FuturaDemiC
+    color: #323439
+
+.baloon-address
+    margin-top: 10px
+    font-size: 14px
+    font-family: FuturaDemiC
+    color: #757575
+    padding-bottom: 14px
+
+.map-footer
+    justify-content: space-between
+
+.login-block a
+    font-family: FuturaBookC
+    font-sixe: 10pt
+    text-decoration: none
+.btn-planeta
+    color: #fff
+    font-family: FuturaDemiC
+    padding: 6px 8px
+    background: linear-gradient(to right, $button-gradient-from, $button-gradient-to)
+    border-radius: 15px
+    border: 0
+    cursor: pointer
+    outline: none
+
+a.btn-planeta
+    margin-top: 8px
+    margin-bottom: 8px
+    text-decoration: none
+    outline: none
+
+#modal_yamap
+    width: 100%
+    height: 500px
+
+
+.card
+    font-family: FuturaDemiC
+    padding: 15px
+    background-color: #fff
+    border-radius: 15px
+    box-shadow: 5px 5px 13px #cecece
+
+.card-header
+    padding-bottom: 20px
+    margin-bottom: 20px
+    border-bottom: 1px solid #cecece
+
+.sidebar
+    height: 100vh
+    top: 0
+    width: 100%
+    background-color: #cecece
+    position: absolute
+    left: 100vw
+    z-index: 1000
+    transition: left .2s
+    &-content
+        position: relative
+        overflow: hidden
+        height: 100%
+        img.fon
+            display: block
+            z-index: 1010
+
+    &-big
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+    &-touch
+        position: absolute
+        top: 0
+        left: 50
+        z-index: 1050
+        height: 100%
+
+    &-close
+        position: absolute
+        top: 10px
+        left: 10px
+        z-index: 1020
+        background-color: #000
+        border-radius: 50%
+        font-size: 30px
+        outline: none
+        border: 0
+        color: #cecece
+        cursor: pointer
+        width: 35px
+        height: 35px
+        text-align: center
+
